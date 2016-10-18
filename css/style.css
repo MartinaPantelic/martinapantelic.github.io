@@ -13,6 +13,10 @@
 .sec-text ul li {
 	font-weight: 300;
 }
+.section ul li a {
+	color: rgba(0, 0, 0, .8);
+	cursor: pointer;
+}
 .section h2 {
 	position: absolute;
 	bottom: 0;
@@ -24,13 +28,10 @@
 	margin-left: 12px;
 	margin-bottom: 5px;
 }
-.section ul li a {
-	color: rgba(0, 0, 0, .8);
-	cursor: pointer;
-}
 .sec-img {
 	text-align: center;
 	opacity: 0.7;
+	margin-top: 100px;
 }
 .sec-img img {
 	margin: 0 auto;
@@ -137,65 +138,66 @@ div[data-anchor="9thPage"] div {
 }
 #fp-nav ul li {
 	float: left;
-	padding: 15px;
+	padding: 17px;
 }
 #fp-nav ul li:hover a span {
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
 	margin: -8px 0 0 -2px;
 }
 #fp-nav ul li:hover a.active span {
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
 	margin: -10px 0 0 -2px;
 }
 #fp-nav ul li a {
 	display: inline;
 }
 #fp-nav ul li a span {
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
+	background-size: 45px;
 }
 #fp-nav ul li a.active span {
 	margin: -15px 0 0 -2px;
-	height: 35px;
-	width: 35px;
+	height: 45px;
+	width: 45px;
 }
 #fp-nav ul li a[href="#firstPage"] span {
 	background: url("../img/i.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#secondPage"] span {
 	background: url("../img/suitcase.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#3rdPage"] span {
 	background: url("../img/grad-cap.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#4thPage"] span {
-	background: url("../img/diploma.svg") no-repeat;
-	background-size: 35px;
+	background: url("../img/medal.svg") no-repeat;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#5thPage"] span {
 	background: url("../img/computer.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#6thPage"] span {
 	background: url("../img/globus.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#7thPage"] span {
 	background: url("../img/user.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#8thPage"] span {
 	background: url("../img/bag.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fp-nav ul li a[href="#9thPage"] span {
 	background: url("../img/folder.svg") no-repeat;
-	background-size: 35px;
+	background-size: 45px;
 }
 #fullpage .section.fp-section {
 	background: transparent !important;
@@ -234,6 +236,55 @@ div[data-anchor="9thPage"] div {
 	}
 	#menu {
 		display: block;
+	}
+	#fp-nav ul li:hover a span {
+		height: 35px;
+		width: 35px;
+		margin: -8px 0 0 -2px;
+	}
+	#fp-nav ul li:hover a.active span {
+		height: 35px;
+		width: 35px;
+		margin: -10px 0 0 -2px;
+	}
+	#fp-nav ul li a {
+		display: inline;
+	}
+	#fp-nav ul li a span {
+		height: 35px;
+		width: 35px;
+	}
+	#fp-nav ul li a.active span {
+		margin: -15px 0 0 -2px;
+		height: 35px;
+		width: 35px;
+	}
+	#fp-nav ul li a[href="#firstPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#secondPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#3rdPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#4thPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#5thPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#6thPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#7thPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#8thPage"] span {
+		background-size: 35px;
+	}
+	#fp-nav ul li a[href="#9thPage"] span {
+		background-size: 35px;
 	}
 }
 @media (min-width:992px) {
