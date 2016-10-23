@@ -74,10 +74,10 @@ li[data-menuanchor="firstPage"].active a:before {
 	border-top: 1px solid rgba(355, 135, 111, 1);
 }
 li[data-menuanchor="secondPage"].active a:before {
-	border-top: 1px solid rgba(151, 206, 213, 1);
+	border-top: 1px solid rgba(148, 140, 350, 1);
 }
 li[data-menuanchor="3rdPage"].active a:before {
-	border-top: 1px solid rgba(148, 140, 350, 1);
+	border-top: 1px solid rgba(151, 206, 213, 1);
 }
 li[data-menuanchor="4thPage"].active a:before {
 	border-top: 1px solid rgba(354, 195, 103, 1);
@@ -101,10 +101,10 @@ div[data-anchor="firstPage"] div {
 	border: 20px solid rgba(355, 135, 111, .5);
 }
 div[data-anchor="secondPage"] div {
-	border: 20px solid rgba(151, 206, 213, .5);
+	border: 20px solid rgba(148, 140, 350, .5);
 }
 div[data-anchor="3rdPage"] div {
-	border: 20px solid rgba(148, 140, 350, .5);
+	border: 20px solid rgba(151, 206, 213, .5);
 }
 div[data-anchor="4thPage"] div {
 	border: 20px solid rgba(354, 195, 103, .5);
