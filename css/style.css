@@ -5,6 +5,18 @@
 	color: rgba(0, 0, 0, .8);
 	text-align: center;
 	margin: 50px 0;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.sec-img {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.sec-img img {
+	width: 100%;
+	max-width: 300px;
 }
 .sec-text ul {
 	list-style: none;
@@ -31,7 +43,6 @@
 .sec-img {
 	text-align: center;
 	opacity: 0.7;
-	margin-top: 100px;
 }
 .sec-img img {
 	margin: 0 auto;
@@ -124,6 +135,9 @@ div[data-anchor="8thPage"] div {
 div[data-anchor="9thPage"] div {
 	border: 20px solid rgba(195, 232, 106, .5);
 }
+div[data-anchor="9thPage"] .sec-text a {
+	color: rgba(355, 135, 111, 1);
+}
 #fp-nav {
 	width: 100%;
 	top: 0;
@@ -212,100 +226,43 @@ div[data-anchor="9thPage"] div {
 }
 @media all and (orientation:landscape) {
 	.sec-img {
-		width: 44%;
+		width: 41.66%;
+		float: left;
+		margin-top: 60px;
 	}
 	.sec-img img {
 		width: 100%;
 	}
 	.sec-text {
-		width: 56%;
+		width: 58.33%;
 		margin-top: 120px;
+		float: right;
+	}
+	.sec-text ul {
+		max-width: 600px;
+		float: right;
 	}
 }
 @media all and (min-width:768px) {
 	.sec-text {
 		font-size: 2rem;
-		margin-top: 200px;
+		margin-top: 120px;
 	}
 }
-@media all and (min-width:768px) and (orientation:portrait) {
-	.section div {
-		padding-top: 10%;
-	}
-	#fp-nav {
-		top: auto;
-		bottom: 0;
-		margin-bottom: 100px;
-	}
-	#fp-nav ul {
-		text-align: right;
-	}
-	#menu {
-		display: block;
-	}
-	#fp-nav ul li:hover a span {
-		height: 35px;
-		width: 35px;
-		margin: -8px 0 0 -2px;
-	}
-	#fp-nav ul li:hover a.active span {
-		height: 35px;
-		width: 35px;
-		margin: -10px 0 0 -2px;
-	}
-	#fp-nav ul li a {
-		display: inline;
-	}
-	#fp-nav ul li a span {
-		height: 35px;
-		width: 35px;
-	}
-	#fp-nav ul li a.active span {
-		margin: -15px 0 0 -2px;
-		height: 35px;
-		width: 35px;
-	}
-	#fp-nav ul li a[href="#firstPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#secondPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#3rdPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#4thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#5thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#6thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#7thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#8thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#9thPage"] span {
-		background-size: 35px;
-	}
-}
-@media all and (min-width:992px) and (orientation:landscape) {
+@media all and (min-width:768px) and (orientation:portrait), all and (min-width:992px) {
 	.sec-img {
-		margin-top: -50px;
+		margin-top: 0;
+		width: 41.66%;
 	}
 	.sec-img img {
-		max-width: 300px;
+		max-width: 350px;
+		float: left;
 	}
 	.sec-text {
 		font-size: 2rem;
-		margin-top: 50px;
-	}
-	.section div {
-		padding-top: 10%;
+		padding-right: 50px;
+		width: 58.33%;
+		float: right;
 	}
 	#fp-nav {
 		top: auto;
