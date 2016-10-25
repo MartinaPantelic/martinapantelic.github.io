@@ -20,6 +20,7 @@
 .sec-img img {
 	width: 100%;
 	max-width: 200px;
+
 }
 .sec-text ul {
 	list-style: none;
@@ -149,8 +150,8 @@ div[data-anchor="9thPage"] .sec-text a {
 	text-align: center;
 }
 #fp-nav ul li {
-	float: left;
 	padding: 17px;
+	display: inline-block;
 }
 #fp-nav ul li:hover a span {
 	height: 45px;
