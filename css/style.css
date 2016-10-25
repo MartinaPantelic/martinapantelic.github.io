@@ -250,16 +250,15 @@ div[data-anchor="9thPage"] .sec-text a {
 		font-size: 2rem;
 		margin-top: 120px;
 	}
-
+	.sec-img img {
+		max-width: 350px;
+		float: left;
+	}
 }
 @media all and (min-width:768px) and (orientation:portrait), all and (min-width:992px) {
 	.sec-img {
 		margin-top: 0;
 		width: 41.66%;
-	}
-	.sec-img img {
-		max-width: 350px;
-		float: left;
 	}
 	.sec-text {
 		font-size: 2rem;
