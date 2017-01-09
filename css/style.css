@@ -381,4 +381,11 @@ all and (min-width:992px) {
     #fp-nav ul li a[href="#9thPage"] span {
         background-size: 35px;
     }
+    .content {
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+}
+
+
 }
