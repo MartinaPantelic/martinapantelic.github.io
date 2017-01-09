@@ -1,329 +1,384 @@
 .sec-text {
-	display: block;
-	font-family: 'Muli', sans-serif;
-	font-size: 1.5rem;
-	color: rgba(0, 0, 0, .8);
-	text-align: center;
-	
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
 }
-.sec-img {
-	width: 100%;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-top: 50px;
-	text-align: center;
-	opacity: 0.8;
-}
-.sec-img img {
-	width: 100%;
-	max-width: 200px;
 
+.sec-img {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-top: 50px;
+    text-align: center;
+    opacity: 0.8;
 }
+
+.sec-img img {
+    width: 100%;
+    max-width: 200px;
+}
+
 .sec-text ul {
-	list-style: none;
-	padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
+
 .sec-text ul li {
-	font-weight: 300;
+    font-weight: 300;
 }
+
 .section ul li a {
-	color: rgba(0, 0, 0, .8);
-	cursor: pointer;
+    color: rgba(0, 0, 0, .8);
+    cursor: pointer;
 }
+
 .section h2 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	font-family: 'Josefin Slab', serif;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-weight: 500;
-	margin-left: 12px;
-	margin-bottom: 5px;
-	font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'Josefin Slab', serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    font-size: 2rem;
 }
 
 #menu {
-	padding: 40px;
-	list-style-type: square;
-	list-style: none;
-	text-align: center;
-	height: 120px;
-	display: none;
+    padding: 40px;
+    list-style-type: square;
+    list-style: none;
+    text-align: center;
+    height: 120px;
+    display: none;
 }
+
 #menu li {
-	display: block;
-	font-family: 'Josefin Slab', serif;
-	font-weight: 500;
-	letter-spacing: 2px;
-	font-size: 1.5rem;
+    display: block;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
 }
-#menu li a, div[data-anchor="9thPage"] ul li a {
-	text-decoration: none;
-	color: rgba(0, 0, 0, .8);
+
+#menu li a,
+div[data-anchor="9thPage"] ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .8);
 }
-#menu li.active a, div[data-anchor="9thPage"] ul li a {
-	position: relative;
-	z-index: 1;
+
+#menu li.active a,
+div[data-anchor="9thPage"] ul li a {
+    position: relative;
+    z-index: 1;
 }
-#menu li.active a:before, div[data-anchor="9thPage"] ul li a:before {
-	content: "";
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 95%;
-	z-index: -1;
+
+#menu li.active a:before,
+div[data-anchor="9thPage"] ul li a:before {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
 }
+
 li[data-menuanchor="firstPage"].active a:before {
-	border-top: 1px solid rgba(355, 135, 111, 1);
+    border-top: 1px solid rgba(355, 135, 111, 1);
 }
+
 li[data-menuanchor="secondPage"].active a:before {
-	border-top: 1px solid rgba(148, 140, 350, 1);
+    border-top: 1px solid rgba(148, 140, 350, 1);
 }
+
 li[data-menuanchor="3rdPage"].active a:before {
-	border-top: 1px solid rgba(151, 206, 213, 1);
+    border-top: 1px solid rgba(151, 206, 213, 1);
 }
+
 li[data-menuanchor="4thPage"].active a:before {
-	border-top: 1px solid rgba(354, 195, 103, 1);
+    border-top: 1px solid rgba(354, 195, 103, 1);
 }
+
 li[data-menuanchor="5thPage"].active a:before {
-	border-top: 1px solid rgba(145, 350, 200, 1);
+    border-top: 1px solid rgba(145, 350, 200, 1);
 }
+
 li[data-menuanchor="6thPage"].active a:before {
-	border-top: 1px solid rgba(238, 241, 160, 1);
+    border-top: 1px solid rgba(238, 241, 160, 1);
 }
+
 li[data-menuanchor="7thPage"].active a:before {
-	border-top: 1px solid rgba(241, 160, 211, 1);
+    border-top: 1px solid rgba(241, 160, 211, 1);
 }
+
 li[data-menuanchor="8thPage"].active a:before {
-	border-top: 1px solid rgba(100, 174, 355, 1);
+    border-top: 1px solid rgba(100, 174, 355, 1);
 }
-li[data-menuanchor="9thPage"].active a:before, div[data-anchor="9thPage"] ul li:hover a:before {
-	border-top: 1px solid rgba(195, 232, 106, 1);
+
+li[data-menuanchor="9thPage"].active a:before,
+div[data-anchor="9thPage"] ul li:hover a:before {
+    border-top: 1px solid rgba(195, 232, 106, 1);
 }
+
 div[data-anchor="firstPage"] div {
-	border: 20px solid rgba(355, 135, 111, .5);
+    border: 20px solid rgba(355, 135, 111, .5);
 }
+
 div[data-anchor="secondPage"] div {
-	border: 20px solid rgba(148, 140, 350, .5);
+    border: 20px solid rgba(148, 140, 350, .5);
 }
+
 div[data-anchor="3rdPage"] div {
-	border: 20px solid rgba(151, 206, 213, .5);
+    border: 20px solid rgba(151, 206, 213, .5);
 }
+
 div[data-anchor="4thPage"] div {
-	border: 20px solid rgba(354, 195, 103, .5);
+    border: 20px solid rgba(354, 195, 103, .5);
 }
+
 div[data-anchor="5thPage"] div {
-	border: 20px solid rgba(145, 350, 200, .5);
+    border: 20px solid rgba(145, 350, 200, .5);
 }
+
 div[data-anchor="6thPage"] div {
-	border: 20px solid rgba(238, 241, 160, .5);
+    border: 20px solid rgba(238, 241, 160, .5);
 }
+
 div[data-anchor="7thPage"] div {
-	border: 20px solid rgba(241, 160, 211, .5);
+    border: 20px solid rgba(241, 160, 211, .5);
 }
+
 div[data-anchor="8thPage"] div {
-	border: 20px solid rgba(100, 174, 355, .5);
+    border: 20px solid rgba(100, 174, 355, .5);
 }
+
 div[data-anchor="9thPage"] div {
-	border: 20px solid rgba(195, 232, 106, .5);
+    border: 20px solid rgba(195, 232, 106, .5);
 }
+
 div[data-anchor="9thPage"] .sec-text a {
-	color: rgba(355, 135, 111, 1);
+    color: rgba(254, 195, 103, 1);
 }
+
 #fp-nav {
-	width: 100%;
-	top: 0;
-	margin-top: 30px !important;
-	padding: 0 20px;
+    width: 100%;
+    top: 0;
+    margin-top: 30px !important;
+    padding: 0 20px;
 }
+
 #fp-nav.right {
-	float: right;
+    float: right;
 }
+
 #fp-nav ul {
-	text-align: center;
+    text-align: center;
 }
+
 #fp-nav ul li {
-	padding: 17px;
-	display: inline-block;
+    padding: 17px;
+    display: inline-block;
 }
+
 #fp-nav ul li:hover a span {
-	height: 45px;
-	width: 45px;
-	margin: -8px 0 0 -2px;
+    height: 45px;
+    width: 45px;
+    margin: -8px 0 0 -2px;
 }
+
 #fp-nav ul li:hover a.active span {
-	height: 45px;
-	width: 45px;
-	margin: -10px 0 0 -2px;
+    height: 45px;
+    width: 45px;
+    margin: -10px 0 0 -2px;
 }
+
 #fp-nav ul li a {
-	display: inline;
+    display: inline;
 }
+
 #fp-nav ul li a span {
-	height: 45px;
-	width: 45px;
-	background-size: 45px;
+    height: 45px;
+    width: 45px;
+    background-size: 45px;
 }
+
 #fp-nav ul li a.active span {
-	margin: -15px 0 0 -2px;
-	height: 45px;
-	width: 45px;
+    margin: -15px 0 0 -2px;
+    height: 45px;
+    width: 45px;
 }
+
 #fp-nav ul li a[href="#firstPage"] span {
-	background: url("../img/i.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/i.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#secondPage"] span {
-	background: url("../img/grad-cap.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/grad-cap.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#3rdPage"] span {
-	background: url("../img/suitcase.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/suitcase.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#4thPage"] span {
-	background: url("../img/medal.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/medal.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#5thPage"] span {
-	background: url("../img/computer.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/computer.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#6thPage"] span {
-	background: url("../img/globus.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/globus.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#7thPage"] span {
-	background: url("../img/user.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/user.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#8thPage"] span {
-	background: url("../img/bag.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/bag.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#9thPage"] span {
-	background: url("../img/folder.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/folder.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fullpage .section.fp-section {
-	background: transparent !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+    background: transparent !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
+
 @media (min-width:450px) {
-	#fp-nav ul li {
-		display: inline;
-		float: none;
-	}
+    #fp-nav ul li {
+        display: inline;
+        float: none;
+    }
 }
+
 @media all and (orientation:landscape) {
-	.sec-img {
-		width: 41.66%;
-		float: left;
-		margin-top: 60px;
-	}
-	.sec-img img {
-		width: 100%;
-	}
-	.sec-text {
-		width: 58.33%;
-		margin-top: 120px;
-		float: right;
-	}
-	.sec-text ul {
-		max-width: 600px;
-		float: right;
-	}
-	.section h2 {
-		font-size: 3rem;
-	}
+    .sec-img {
+        width: 41.66%;
+        float: left;
+        margin-top: 60px;
+    }
+    .sec-img img {
+        width: 100%;
+    }
+    .sec-text {
+        width: 58.33%;
+        margin-top: 120px;
+        float: right;
+    }
+    .sec-text ul {
+        max-width: 600px;
+        float: right;
+    }
+    .section h2 {
+        font-size: 3rem;
+    }
 }
+
 @media all and (min-width:768px) {
-	.sec-text {
-		font-size: 2rem;
-		margin-top: 120px;
-	}
-	.sec-img img {
-		max-width: 350px;
-		float: left;
-	}
+    .sec-text {
+        font-size: 2rem;
+        margin-top: 120px;
+    }
+    .sec-img img {
+        max-width: 350px;
+        float: left;
+    }
 }
-@media all and (min-width:768px) and (orientation:portrait), all and (min-width:992px) {
-	.sec-img {
-		margin-top: 0;
-		width: 41.66%;
-	}
-	.sec-text {
-		font-size: 2rem;
-		padding-right: 50px;
-		width: 58.33%;
-		float: right;
-	}
-	#fp-nav {
-		top: auto;
-		bottom: 0;
-		margin-bottom: 100px;
-	}
-	#fp-nav ul {
-		text-align: right;
-	}
-	#menu {
-		display: block;
-	}
-	#fp-nav ul li:hover a span {
-		height: 35px;
-		width: 35px;
-		margin: -8px 0 0 -2px;
-	}
-	#fp-nav ul li:hover a.active span {
-		height: 35px;
-		width: 35px;
-		margin: -10px 0 0 -2px;
-	}
-	#fp-nav ul li a {
-		display: inline;
-	}
-	#fp-nav ul li a span {
-		height: 35px;
-		width: 35px;
-	}
-	#fp-nav ul li a.active span {
-		margin: -15px 0 0 -2px;
-		height: 35px;
-		width: 35px;
-	}
-	#fp-nav ul li a[href="#firstPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#secondPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#3rdPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#4thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#5thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#6thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#7thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#8thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#9thPage"] span {
-		background-size: 35px;
-	}
+
+@media all and (min-width:768px) and (orientation:portrait),
+all and (min-width:992px) {
+    .sec-img {
+        margin-top: 0;
+        width: 41.66%;
+    }
+    .sec-text {
+        font-size: 2rem;
+        padding-right: 50px;
+        width: 58.33%;
+        float: right;
+    }
+    #fp-nav {
+        top: auto;
+        bottom: 0;
+        margin-bottom: 100px;
+    }
+    #fp-nav ul {
+        text-align: right;
+    }
+    #menu {
+        display: block;
+    }
+    #fp-nav ul li:hover a span {
+        height: 35px;
+        width: 35px;
+        margin: -8px 0 0 -2px;
+    }
+    #fp-nav ul li:hover a.active span {
+        height: 35px;
+        width: 35px;
+        margin: -10px 0 0 -2px;
+    }
+    #fp-nav ul li a {
+        display: inline;
+    }
+    #fp-nav ul li a span {
+        height: 35px;
+        width: 35px;
+    }
+    #fp-nav ul li a.active span {
+        margin: -15px 0 0 -2px;
+        height: 35px;
+        width: 35px;
+    }
+    #fp-nav ul li a[href="#firstPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#secondPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#3rdPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#4thPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#5thPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#6thPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#7thPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#8thPage"] span {
+        background-size: 35px;
+    }
+    #fp-nav ul li a[href="#9thPage"] span {
+        background-size: 35px;
+    }
 }
