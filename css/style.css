@@ -37,15 +37,24 @@
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	font-family: 'Josefin Slab', serif;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-weight: 500;
 	margin-left: 12px;
 	margin-bottom: 5px;
 	font-size: 2rem;
+	text-transform: uppercase;
 }
-
+h2, h3 {
+	font-family: 'Josefin Slab', serif;
+	letter-spacing: 5px;
+	font-weight: 500;
+} 
+h3 {
+	display: inline;
+	font-size: 2.8rem;
+	border-bottom: 1px solid black;
+}
+.red {
+	color: rgba(355, 135, 111, 1);
+}
 #menu {
 	padding: 40px;
 	list-style-type: square;
@@ -84,14 +93,14 @@ li[data-menuanchor="firstPage"].active a:before {
 	border-top: 1px solid rgba(355, 135, 111, 1);
 }
 li[data-menuanchor="secondPage"].active a:before {
-	border-top: 1px solid rgba(148, 140, 350, 1);
+	border-top: 1px solid rgba(255, 192, 0, 1);
 }
 li[data-menuanchor="3rdPage"].active a:before {
-	border-top: 1px solid rgba(151, 206, 213, 1);
+	border-top: 1px solid rgba(148, 140, 350, 1);
 }
-li[data-menuanchor="4thPage"].active a:before {
+/* li[data-menuanchor="4thPage"].active a:before {
 	border-top: 1px solid rgba(354, 195, 103, 1);
-}
+} */
 li[data-menuanchor="5thPage"].active a:before {
 	border-top: 1px solid rgba(145, 350, 200, 1);
 }
@@ -111,14 +120,14 @@ div[data-anchor="firstPage"] div {
 	border: 20px solid rgba(355, 135, 111, .5);
 }
 div[data-anchor="secondPage"] div {
-	border: 20px solid rgba(148, 140, 350, .5);
+	border: 20px solid rgba(255, 192, 0, .5);
 }
 div[data-anchor="3rdPage"] div {
-	border: 20px solid rgba(151, 206, 213, .5);
+	border: 20px solid rgba(148, 140, 350, .5);
 }
-div[data-anchor="4thPage"] div {
+/* div[data-anchor="4thPage"] div {
 	border: 20px solid rgba(354, 195, 103, .5);
-}
+} */
 div[data-anchor="5thPage"] div {
 	border: 20px solid rgba(145, 350, 200, .5);
 }
@@ -181,15 +190,15 @@ div[data-anchor="9thPage"] .sec-text a {
 	background-size: 45px;
 }
 #fp-nav ul li a[href="#secondPage"] span {
-	background: url("../img/grad-cap.svg") no-repeat;
-	background-size: 45px;
-}
-#fp-nav ul li a[href="#3rdPage"] span {
 	background: url("../img/suitcase.svg") no-repeat;
 	background-size: 45px;
 }
+#fp-nav ul li a[href="#3rdPage"] span {
+	background: url("../img/grad-cap.svg") no-repeat;
+	background-size: 45px;
+}
 #fp-nav ul li a[href="#4thPage"] span {
-	background: url("../img/medal.svg") no-repeat;
+	background: url("../img/grad-cap.svg") no-repeat;
 	background-size: 45px;
 }
 #fp-nav ul li a[href="#5thPage"] span {
@@ -326,4 +335,7 @@ div[data-anchor="9thPage"] .sec-text a {
 	#fp-nav ul li a[href="#9thPage"] span {
 		background-size: 35px;
 	}
+}
+red {
+	col
 }
