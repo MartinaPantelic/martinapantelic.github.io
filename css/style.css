@@ -1,37 +1,30 @@
 .sec-text {
 	display: block;
 	font-family: 'Muli', sans-serif;
-	font-size: 1.5rem;
+	font-size: 2.3vh;
 	color: rgba(0, 0, 0, .8);
 	text-align: center;
-	
-	width: 100%;
 	padding-right: 15px;
 	padding-left: 15px;
 }
 .sec-img {
-	width: 100%;
+	width: 85%;
 	padding-right: 15px;
 	padding-left: 15px;
-	margin-top: 50px;
 	text-align: center;
 	opacity: 0.8;
+	margin: 60px auto 0;
 }
 .sec-img img {
-	width: 100%;
-	max-width: 200px;
-
+	width: 70%;
 }
 .sec-text ul {
 	list-style: none;
 	padding-left: 0;
+
 }
 .sec-text ul li {
 	font-weight: 300;
-}
-.section ul li a {
-	color: rgba(0, 0, 0, .8);
-	cursor: pointer;
 }
 .section h2 {
 	position: absolute;
@@ -49,7 +42,7 @@ h2, h3 {
 } 
 h3 {
 	display: inline;
-	font-size: 2.8rem;
+	font-size: 2rem;
 	border-bottom: 1px solid black;
 }
 .red {
@@ -70,25 +63,43 @@ h3 {
 	letter-spacing: 2px;
 	font-size: 1.5rem;
 }
-#menu li a, div[data-anchor="9thPage"] ul li a {
-	text-decoration: none;
-	color: rgba(0, 0, 0, .8);
+
+#menu li a,
+div[data-anchor="7thPage"] ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .8);
 }
-#menu li.active a, div[data-anchor="9thPage"] ul li a {
-	position: relative;
+#menu li a:hover {
+	font-weight: bold;
+}
+
+#menu li.active a,
+div[data-anchor="7thPage"] ul li a {
+    position: relative;
 	z-index: 1;
 }
-#menu li.active a:before, div[data-anchor="9thPage"] ul li a:before {
-	content: "";
-	margin: 0 auto;
-	position: absolute;
-	top: 50%;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 95%;
-	z-index: -1;
+.sec-text a {
+	font-style: italic;
+	border-top: 1px solid transparent;
+	position: relative;
 }
+.sec-text a:hover {
+	border-bottom: 1px solid rgba(195, 232, 106, 1);
+}
+
+#menu li.active a:before,
+div[data-anchor="7thPage"] ul li a:before {
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 95%;
+    z-index: -1;
+}
+
 li[data-menuanchor="firstPage"].active a:before {
 	border-top: 1px solid rgba(355, 135, 111, 1);
 }
@@ -98,24 +109,19 @@ li[data-menuanchor="secondPage"].active a:before {
 li[data-menuanchor="3rdPage"].active a:before {
 	border-top: 1px solid rgba(148, 140, 350, 1);
 }
-/* li[data-menuanchor="4thPage"].active a:before {
-	border-top: 1px solid rgba(354, 195, 103, 1);
-} */
+ li[data-menuanchor="4thPage"].active a:before {
+	border-top: 1px solid rgba(145, 350, 200, .5);
+}
 li[data-menuanchor="5thPage"].active a:before {
-	border-top: 1px solid rgba(145, 350, 200, 1);
+	border-top: 1px solid  rgba(241, 160, 211, 1);
 }
 li[data-menuanchor="6thPage"].active a:before {
-	border-top: 1px solid rgba(238, 241, 160, 1);
-}
-li[data-menuanchor="7thPage"].active a:before {
-	border-top: 1px solid rgba(241, 160, 211, 1);
-}
-li[data-menuanchor="8thPage"].active a:before {
 	border-top: 1px solid rgba(100, 174, 355, 1);
 }
-li[data-menuanchor="9thPage"].active a:before, div[data-anchor="9thPage"] ul li:hover a:before {
-	border-top: 1px solid rgba(195, 232, 106, 1);
+li[data-menuanchor="7thPage"].active a:before {
+	border-top: 1px solid  rgba(195, 232, 106, 1);
 }
+
 div[data-anchor="firstPage"] div {
 	border: 20px solid rgba(355, 135, 111, .5);
 }
@@ -124,28 +130,21 @@ div[data-anchor="secondPage"] div {
 }
 div[data-anchor="3rdPage"] div {
 	border: 20px solid rgba(148, 140, 350, .5);
-}
-/* div[data-anchor="4thPage"] div {
-	border: 20px solid rgba(354, 195, 103, .5);
-} */
-div[data-anchor="5thPage"] div {
+} 
+div[data-anchor="4thPage"] div {
 	border: 20px solid rgba(145, 350, 200, .5);
 }
-div[data-anchor="6thPage"] div {
-	border: 20px solid rgba(238, 241, 160, .5);
-}
-div[data-anchor="7thPage"] div {
+div[data-anchor="5thPage"] div {
 	border: 20px solid rgba(241, 160, 211, .5);
 }
-div[data-anchor="8thPage"] div {
+div[data-anchor="6thPage"] div {
 	border: 20px solid rgba(100, 174, 355, .5);
+	
 }
-div[data-anchor="9thPage"] div {
+div[data-anchor="7thPage"] div {
 	border: 20px solid rgba(195, 232, 106, .5);
 }
-div[data-anchor="9thPage"] .sec-text a {
-	color: rgba(355, 135, 111, 1);
-}
+
 #fp-nav {
 	width: 100%;
 	top: 0;
@@ -198,26 +197,18 @@ div[data-anchor="9thPage"] .sec-text a {
 	background-size: 45px;
 }
 #fp-nav ul li a[href="#4thPage"] span {
-	background: url("../img/grad-cap.svg") no-repeat;
-	background-size: 45px;
-}
-#fp-nav ul li a[href="#5thPage"] span {
 	background: url("../img/computer.svg") no-repeat;
 	background-size: 45px;
 }
-#fp-nav ul li a[href="#6thPage"] span {
-	background: url("../img/globus.svg") no-repeat;
-	background-size: 45px;
-}
-#fp-nav ul li a[href="#7thPage"] span {
+#fp-nav ul li a[href="#5thPage"] span {
 	background: url("../img/user.svg") no-repeat;
 	background-size: 45px;
 }
-#fp-nav ul li a[href="#8thPage"] span {
+#fp-nav ul li a[href="#6thPage"] span {
 	background: url("../img/bag.svg") no-repeat;
 	background-size: 45px;
 }
-#fp-nav ul li a[href="#9thPage"] span {
+#fp-nav ul li a[href="#7thPage"] span {
 	background: url("../img/folder.svg") no-repeat;
 	background-size: 45px;
 }
@@ -226,54 +217,29 @@ div[data-anchor="9thPage"] .sec-text a {
 	padding-top: 0 !important;
 	padding-bottom: 0 !important;
 }
-@media (min-width:450px) {
-	#fp-nav ul li {
-		display: inline;
-		float: none;
+
+
+@media all and (min-width: 568px) {
+	.sec-text {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(0, -30%);
+		padding-right: 30px;
+		font-size: 3vh;
 	}
-}
-@media all and (orientation:landscape) {
 	.sec-img {
-		width: 41.66%;
-		float: left;
-		margin-top: 60px;
+		width: 50%;
+		margin: unset;
 	}
-	.sec-img img {
-		width: 100%;
-	}
-	.sec-text {
-		width: 58.33%;
-		margin-top: 120px;
-		float: right;
-	}
-	.sec-text ul {
-		max-width: 600px;
-		float: right;
-	}
-	.section h2 {
-		font-size: 3rem;
-	}
+
 }
-@media all and (min-width:768px) {
+@media all and (min-width: 568px) and (orientation:portrait), all and (min-width:992px) {
 	.sec-text {
-		font-size: 2rem;
-		margin-top: 120px;
-	}
-	.sec-img img {
-		max-width: 350px;
-		float: left;
-	}
-}
-@media all and (min-width:768px) and (orientation:portrait), all and (min-width:992px) {
-	.sec-img {
-		margin-top: 0;
-		width: 41.66%;
-	}
-	.sec-text {
-		font-size: 2rem;
 		padding-right: 50px;
-		width: 58.33%;
 		float: right;
+		font-size: 2.3vh;
+		width: 50%;
 	}
 	#fp-nav {
 		top: auto;
@@ -329,13 +295,4 @@ div[data-anchor="9thPage"] .sec-text a {
 	#fp-nav ul li a[href="#7thPage"] span {
 		background-size: 35px;
 	}
-	#fp-nav ul li a[href="#8thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#9thPage"] span {
-		background-size: 35px;
-	}
-}
-red {
-	col
 }
