@@ -78,12 +78,12 @@ div[data-anchor="7thPage"] ul li a {
     position: relative;
 	z-index: 1;
 }
-.sec-text a {
+.sec-link a {
 	font-style: italic;
 	border-top: 1px solid transparent;
 	position: relative;
 }
-.sec-text a:hover {
+.sec-link a:hover {
 	border-bottom: 1px solid rgba(195, 232, 106, 1);
 }
 
@@ -100,6 +100,22 @@ div[data-anchor="7thPage"] ul li a:before {
     z-index: -1;
 }
 
+.in-icon img {
+	background-color: rgba(355, 135, 111, 1);
+	width: 20px;
+	transition: all .3s; 
+}
+.in-icon:hover img {
+background-color: transparent;
+}
+.email {
+	display: block;
+	font-weight: bold;
+	color:rgba(355, 135, 111, 1);
+}
+.email:hover {
+	color:rgba(355, 135, 111, 1);
+}
 li[data-menuanchor="firstPage"].active a:before {
 	border-top: 1px solid rgba(355, 135, 111, 1);
 }
