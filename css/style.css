@@ -194,6 +194,7 @@ div[data-anchor="7thPage"] div {
 	height: 45px;
 	width: 45px;
 	background-size: 45px;
+	margin: -10px 0 0 -2px!important;
 }
 #fp-nav ul li a.active span {
 	margin: -20px 0 0 -2px;
