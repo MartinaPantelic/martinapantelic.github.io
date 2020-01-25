@@ -180,12 +180,12 @@ div[data-anchor="7thPage"] div {
 #fp-nav ul li:hover a span {
 	height: 45px;
 	width: 45px;
-	margin: -18px 0 0 -2px;
+	margin: -18px 0 0 -2px!important;
 }
 #fp-nav ul li:hover a.active span {
 	height: 45px;
 	width: 45px;
-	margin: -20px 0 0 -2px;
+	margin: -18px 0 0 -2px!important;
 }
 #fp-nav ul li a {
 	display: inline;
