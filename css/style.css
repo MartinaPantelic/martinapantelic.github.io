@@ -1,94 +1,108 @@
 .sec-text {
-	display: block;
-	font-family: 'Muli', sans-serif;
-	font-size: 2.3vh;
-	color: rgba(0, 0, 0, .8);
-	text-align: center;
-	padding-right: 15px;
-	padding-left: 15px;
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 2.3vh;
+    color: rgba(0, 0, 0, .8);
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px;
 }
+
 .sec-img {
-	width: 85%;
-	padding-right: 15px;
-	padding-left: 15px;
-	text-align: center;
-	opacity: 0.8;
-	margin: 60px auto 0;
+    width: 85%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    opacity: 0.8;
+    margin: 60px auto 0;
 }
+
 .sec-img img {
-	width: 70%;
+    width: 70%;
 }
+
 .sec-text ul {
-	list-style: none;
-	padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 
 }
+
 .sec-text ul li {
-	font-weight: 300;
+    font-weight: 300;
 }
+
 .section h2 {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	margin-left: 12px;
-	margin-bottom: 5px;
-	font-size: 2rem;
-	text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 12px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
-h2, h3 {
-	font-family: 'Josefin Slab', serif;
-	letter-spacing: 5px;
-	font-weight: 500;
-} 
+
+h2,
 h3 {
-	display: inline;
-	font-size: 2rem;
-	border-bottom: 1px solid black;
+    font-family: 'Josefin Slab', serif;
+    letter-spacing: 5px;
+    font-weight: 500;
 }
+
+h3 {
+    display: inline;
+    font-size: 2rem;
+    border-bottom: 1px solid black;
+}
+
 .red {
-	color: rgba(355, 135, 111, 1);
+    color: rgba(355, 135, 111, 1);
 }
+
 #menu {
-	padding: 40px;
-	list-style-type: square;
-	list-style: none;
-	text-align: center;
-	height: 120px;
-	display: none;
+    padding: 40px;
+    list-style-type: square;
+    list-style: none;
+    text-align: center;
+    height: 120px;
+    display: none;
 }
+
 #menu li {
-	display: block;
-	font-family: 'Josefin Slab', serif;
-	font-weight: 500;
-	letter-spacing: 2px;
-	font-size: 1.5rem;
+    display: block;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
 }
 
 #menu li a,
-div[data-anchor="7thPage"] ul li a {
+div[data-anchor="secondPage"] ul li a {
     text-decoration: none;
     color: rgba(0, 0, 0, .8);
 }
+
 #menu li a:hover {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 #menu li.active a,
-div[data-anchor="7thPage"] ul li a {
+div[data-anchor="secondPage"] ul li a {
     position: relative;
-	z-index: 1;
+    z-index: 1;
 }
+
 .sec-link a {
-	font-style: italic;
-	border-top: 1px solid transparent;
-	position: relative;
+    font-style: italic;
+    border-top: 1px solid transparent;
+    position: relative;
 }
+
 .sec-link a:hover {
-	border-bottom: 1px solid rgba(195, 232, 106, 1);
+    border-bottom: 1px solid rgba(195, 232, 106, 1);
 }
 
 #menu li.active a:before,
-div[data-anchor="7thPage"] ul li a:before {
+div[data-anchor="secondPage"] ul li a:before {
     content: "";
     margin: 0 auto;
     position: absolute;
@@ -101,215 +115,266 @@ div[data-anchor="7thPage"] ul li a:before {
 }
 
 .in-icon img {
-	background-color: rgba(355, 135, 111, 1);
-	width: 20px;
-	transition: all .3s; 
+    background-color: rgba(355, 135, 111, 1);
+    width: 20px;
+    transition: all .3s;
 }
+
 .in-icon:hover img {
-background-color: transparent;
+    background-color: transparent;
 }
+
 .email {
-	display: block;
-	font-weight: bold;
-	color:rgba(355, 135, 111, 1);
+    display: block;
+    font-weight: bold;
+    color: rgba(355, 135, 111, 1);
 }
+
 .email:hover {
-	color:rgba(355, 135, 111, 1);
+    color: rgba(355, 135, 111, 1);
 }
+
 li[data-menuanchor="firstPage"].active a:before {
-	border-top: 1px solid rgba(355, 135, 111, 1);
+    border-top: 1px solid rgba(355, 135, 111, 1);
 }
+
 li[data-menuanchor="secondPage"].active a:before {
-	border-top: 1px solid rgba(255, 192, 0, 1);
+    border-top: 1px solid rgba(195, 232, 106, 1);
 }
+
+
 li[data-menuanchor="3rdPage"].active a:before {
-	border-top: 1px solid rgba(148, 140, 350, 1);
+    border-top: 1px solid rgba(255, 192, 0, 1);
 }
- li[data-menuanchor="4thPage"].active a:before {
-	border-top: 1px solid rgba(145, 350, 200, .5);
+
+li[data-menuanchor="4thPage"].active a:before {
+    border-top: 1px solid rgba(148, 140, 350, 1);
 }
+
 li[data-menuanchor="5thPage"].active a:before {
-	border-top: 1px solid  rgba(241, 160, 211, 1);
+    border-top: 1px solid rgba(145, 350, 200, .5);
 }
+
 li[data-menuanchor="6thPage"].active a:before {
-	border-top: 1px solid rgba(100, 174, 355, 1);
+    border-top: 1px solid rgba(241, 160, 211, 1);
 }
+
 li[data-menuanchor="7thPage"].active a:before {
-	border-top: 1px solid  rgba(195, 232, 106, 1);
+    border-top: 1px solid rgba(100, 174, 355, 1);
 }
 
 div[data-anchor="firstPage"] div {
-	border: 20px solid rgba(355, 135, 111, .5);
+    border: 20px solid rgba(355, 135, 111, .5);
 }
+
 div[data-anchor="secondPage"] div {
-	border: 20px solid rgba(255, 192, 0, .5);
-}
-div[data-anchor="3rdPage"] div {
-	border: 20px solid rgba(148, 140, 350, .5);
-} 
-div[data-anchor="4thPage"] div {
-	border: 20px solid rgba(145, 350, 200, .5);
-}
-div[data-anchor="5thPage"] div {
-	border: 20px solid rgba(241, 160, 211, .5);
-}
-div[data-anchor="6thPage"] div {
-	border: 20px solid rgba(100, 174, 355, .5);
-	
-}
-div[data-anchor="7thPage"] div {
 	border: 20px solid rgba(195, 232, 106, .5);
 }
 
+div[data-anchor="3rdPage"] div {
+	border: 20px solid rgba(255, 192, 0, .5);
+   
+}
+
+div[data-anchor="4thPage"] div {
+	border: 20px solid rgba(148, 140, 350, .5);
+   
+}
+
+div[data-anchor="5thPage"] div {	
+	border: 20px solid rgba(145, 350, 200, .5);   
+}
+
+div[data-anchor="6thPage"] div {
+	border: 20px solid rgba(241, 160, 211, .5);
+}
+
+div[data-anchor="7thPage"] div {
+	border: 20px solid rgba(100, 174, 355, .5);
+}
+
 #fp-nav {
-	width: 100%;
-	top: 0;
-	margin-top: 20px !important;
-	padding: 0 20px;
+    width: 100%;
+    top: 0;
+    margin-top: 30px !important;
+    padding: 0 20px;
 }
+
 #fp-nav.right {
-	float: right;
+    float: right;
 }
+
 #fp-nav ul {
-	text-align: center;
+    text-align: center;
 }
+
 #fp-nav ul li {
-	padding: 17px;
-	display: inline-block;
+    padding: 17px;
+    display: inline-block;
 }
+
 #fp-nav ul li:hover a span {
-	height: 45px;
-	width: 45px;
-	margin: -18px 0 0 -2px!important;
+    height: 45px;
+    width: 45px;
+    margin: -8px 0 0 -2px;
 }
+
 #fp-nav ul li:hover a.active span {
-	height: 45px;
-	width: 45px;
-	margin: -18px 0 0 -2px!important;
+    height: 45px;
+    width: 45px;
+    margin: -10px 0 0 -2px;
 }
+
 #fp-nav ul li a {
-	display: inline;
+    display: inline;
 }
+
 #fp-nav ul li a span {
-	height: 45px;
-	width: 45px;
-	background-size: 45px;
-	margin: -10px 0 0 -2px!important;
+    height: 45px;
+    width: 45px;
+    background-size: 45px;
 }
+
 #fp-nav ul li a.active span {
-	margin: -20px 0 0 -2px;
-	height: 45px;
-	width: 45px;
+    margin: -15px 0 0 -2px;
+    height: 45px;
+    width: 45px;
 }
+
 #fp-nav ul li a[href="#firstPage"] span {
-	background: url("../img/i.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/i.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#secondPage"] span {
-	background: url("../img/suitcase.svg") no-repeat;
-	background-size: 45px;
+    background: url("../img/folder.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#3rdPage"] span {
-	background: url("../img/grad-cap.svg") no-repeat;
-	background-size: 45px;
+	background: url("../img/suitcase.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#4thPage"] span {
-	background: url("../img/computer.svg") no-repeat;
-	background-size: 45px;
+	background: url("../img/grad-cap.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#5thPage"] span {
-	background: url("../img/user.svg") no-repeat;
-	background-size: 45px;
+	background: url("../img/computer.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#6thPage"] span {
-	background: url("../img/bag.svg") no-repeat;
-	background-size: 45px;
+	background: url("../img/user.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fp-nav ul li a[href="#7thPage"] span {
-	background: url("../img/folder.svg") no-repeat;
-	background-size: 45px;
+	background: url("../img/bag.svg") no-repeat;
+    background-size: 45px;
 }
+
 #fullpage .section.fp-section {
-	background: transparent !important;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+    background: transparent !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 
 @media all and (min-width: 568px) {
-	.sec-text {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(0, -30%);
-		padding-right: 30px;
-		font-size: 3vh;
-	}
-	.sec-img {
-		width: 50%;
-		margin: unset;
-	}
+    .sec-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -30%);
+        padding-right: 30px;
+        font-size: 3vh;
+    }
+
+    .sec-img {
+        width: 50%;
+        margin: unset;
+    }
 
 }
-@media all and (min-width: 568px) and (orientation:portrait), all and (min-width:992px) {
-	.sec-text {
-		padding-right: 50px;
-		float: right;
-		font-size: 2.3vh;
-		width: 50%;
-	}
-	#fp-nav {
-		top: auto;
-		bottom: 0;
-		margin-bottom: 100px;
-	}
-	#fp-nav ul {
-		text-align: right;
-	}
-	#menu {
-		display: block;
-	}
-	#fp-nav ul li:hover a span {
-		height: 35px;
-		width: 35px;
-		margin: -8px 0 0 -2px;
-	}
-	#fp-nav ul li:hover a.active span {
-		height: 35px;
-		width: 35px;
-		margin: -10px 0 0 -2px;
-	}
-	#fp-nav ul li a {
-		display: inline;
-	}
-	#fp-nav ul li a span {
-		height: 35px;
-		width: 35px;
-	}
-	#fp-nav ul li a.active span {
-		margin: -15px 0 0 -2px;
-		height: 35px;
-		width: 35px;
-	}
-	#fp-nav ul li a[href="#firstPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#secondPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#3rdPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#4thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#5thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#6thPage"] span {
-		background-size: 35px;
-	}
-	#fp-nav ul li a[href="#7thPage"] span {
-		background-size: 35px;
-	}
+
+@media all and (min-width: 568px) and (orientation:portrait),
+all and (min-width:992px) {
+    .sec-text {
+        padding-right: 50px;
+        float: right;
+        font-size: 2.3vh;
+        width: 50%;
+    }
+
+    #fp-nav {
+        top: auto;
+        bottom: 0;
+        margin-bottom: 100px;
+    }
+
+    #fp-nav ul {
+        text-align: right;
+    }
+
+    #menu {
+        display: block;
+    }
+
+    #fp-nav ul li:hover a span {
+        height: 35px;
+        width: 35px;
+        margin: -8px 0 0 -2px;
+    }
+
+    #fp-nav ul li:hover a.active span {
+        height: 35px;
+        width: 35px;
+        margin: -10px 0 0 -2px;
+    }
+
+    #fp-nav ul li a {
+        display: inline;
+    }
+
+    #fp-nav ul li a span {
+        height: 35px;
+        width: 35px;
+    }
+
+    #fp-nav ul li a.active span {
+        margin: -15px 0 0 -2px;
+        height: 35px;
+        width: 35px;
+    }
+
+    #fp-nav ul li a[href="#firstPage"] span {
+        background-size: 35px;
+    }
+
+    #fp-nav ul li a[href="#secondPage"] span {
+        background-size: 35px;
+    }
+
+    #fp-nav ul li a[href="#3rdPage"] span {
+        background-size: 35px;
+    }
+
+    #fp-nav ul li a[href="#4thPage"] span {
+        background-size: 35px;
+    }
+
+    #fp-nav ul li a[href="#5thPage"] span {
+        background-size: 35px;
+    }
+
+    #fp-nav ul li a[href="#6thPage"] span {
+        background-size: 35px;
+    }
+
+    #fp-nav ul li a[href="#7thPage"] span {
+        background-size: 35px;
+    }
 }
