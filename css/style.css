@@ -288,7 +288,7 @@ div[data-anchor="7thPage"] div {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(0, -30%);
+        transform: translate(0, -45%);
         padding-right: 30px;
         font-size: 3vh;
     }
