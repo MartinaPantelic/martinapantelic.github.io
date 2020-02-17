@@ -286,6 +286,11 @@ div[data-anchor="7thPage"] div {
     padding-bottom: 0 !important;
 }
 
+@media all (max-width: 568px) {
+	div[data-anchor="secondPage"] .sec-img {
+	display: none;
+	margin-top: 80px;
+}
 
 @media all and (min-width: 568px) {
     .sec-text {
@@ -303,10 +308,7 @@ div[data-anchor="7thPage"] div {
     }
 
 }
-@media all (max-width: 568px) {
-	div[data-anchor="secondPage"] .sec-img {
-	display: none;	
-}
+
 }
 @media all and (min-width: 568px) and (orientation:portrait),
 all and (min-width:992px) {
