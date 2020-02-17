@@ -291,6 +291,7 @@ div[data-anchor="7thPage"] div {
 	display: none;
 	margin-top: 80px;
 }
+}
 
 @media all and (min-width: 568px) {
     .sec-text {
@@ -309,7 +310,7 @@ div[data-anchor="7thPage"] div {
 
 }
 
-}
+
 @media all and (min-width: 568px) and (orientation:portrait),
 all and (min-width:992px) {
     .sec-text {
