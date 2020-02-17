@@ -175,11 +175,6 @@ div[data-anchor="secondPage"] .sec-link {
 	font-size: 2.8vh;
 }
 
-div[data-anchor="secondPage"] .sec-img {
-	display: none;
-	
-}
-
 div[data-anchor="3rdPage"] div {
 	border: 20px solid rgba(255, 192, 0, .5);
    
@@ -308,7 +303,11 @@ div[data-anchor="7thPage"] div {
     }
 
 }
-
+@media all (max-width: 568px) {
+	div[data-anchor="secondPage"] .sec-img {
+	display: none;	
+}
+}
 @media all and (min-width: 568px) and (orientation:portrait),
 all and (min-width:992px) {
     .sec-text {
