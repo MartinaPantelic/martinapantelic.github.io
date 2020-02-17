@@ -169,14 +169,16 @@ div[data-anchor="firstPage"] div {
 
 div[data-anchor="secondPage"] div {
 	border: 20px solid rgba(195, 232, 106, .5);
-	.sec-img
+	
 }
 div[data-anchor="secondPage"] .sec-link {
-	font-size: 2.4vh;
+	font-size: 2.6vh;
 }
 
 div[data-anchor="secondPage"] .sec-img {
-	width: 70%;
+	width: 65%;
+    	margin: 80px auto 0;
+	
 }
 
 div[data-anchor="3rdPage"] div {
