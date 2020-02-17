@@ -14,7 +14,7 @@
     padding-left: 15px;
     text-align: center;
     opacity: 0.8;
-    margin: 86px auto 0;
+    margin: 75px auto 0;
 }
 
 .sec-img img {
@@ -169,6 +169,10 @@ div[data-anchor="firstPage"] div {
 
 div[data-anchor="secondPage"] div {
 	border: 20px solid rgba(195, 232, 106, .5);
+	.sec-img
+}
+div[data-anchor="secondPage"] .sec-link {
+	font-size: 2.4vh;
 }
 
 div[data-anchor="3rdPage"] div {
