@@ -175,6 +175,10 @@ div[data-anchor="secondPage"] .sec-link {
 	font-size: 2.4vh;
 }
 
+div[data-anchor="secondPage"] .sec-img {
+	width: 70%;
+}
+
 div[data-anchor="3rdPage"] div {
 	border: 20px solid rgba(255, 192, 0, .5);
    
