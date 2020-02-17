@@ -172,12 +172,11 @@ div[data-anchor="secondPage"] div {
 	
 }
 div[data-anchor="secondPage"] .sec-link {
-	font-size: 2.6vh;
+	font-size: 2.8vh;
 }
 
 div[data-anchor="secondPage"] .sec-img {
-	width: 65%;
-    	margin: 80px auto 0;
+	display: none;
 	
 }
 
