@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="zxx">
 
 <head>
   <meta charset="UTF-8">
@@ -11,7 +11,7 @@
   <link rel="icon" href="img/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/flexbox.css" type="text/css">
+  <link rel="stylesheet" href="../css/float.css" type="text/css">
 </head>
 
 <body>
@@ -19,9 +19,10 @@
     <a href="javascript:;" class="logo"><img src="img/logo.svg" alt="logo"></a>
     <nav class="navbar">
       <ul>
-        <li><a href="javascript:;">About us</a></li>
-        <li><a href="javascript:;">What we do</a></li>
-        <li><a href="javascript:;">User login</a></li>
+        <li><a href="./templates/index.html">Float layout</a></li>
+        <li><a href="#aboutus">About us</a></li>
+        <li><a href="#whatwedo">What we do</a></li>
+        <li><a href="#posts">Posts</a></li>
       </ul>
     </nav>
     <a href="javascript:;" class="avatar">
@@ -29,28 +30,25 @@
         aria-label="profile-image"></div>
     </a>
   </header>
-  <main role="main">
+  <main>
     <div class="hero-banner" style="background-image: url('img/home-back.jpg')" role="img"
       aria-label="people-playing-samba">
       <h1>Escola de samba SAMBANSA</h1>
     </div>
     <div class="container">
-      <article class="article flex-cont">
+      <article class="article flex-cont" id="aboutus">
         <div class="text-content">
-
           <h2 class="heading-block">About Us</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
             aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
             pariatur!
             Quisquam, libero.</p>
-
         </div>
         <div class="box-img">
           <img src="img/tamborims.jpg" alt="girls-play-tamborims">
         </div>
-
       </article>
-      <article class="article flex-cont">
+      <article class="article flex-cont" id="whatwedo">
         <div class="text-content">
           <h2 class="heading-block">What we do</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
@@ -62,49 +60,45 @@
           <img src="img/oja.jpg" alt="girl-plays-agogo">
         </div>
       </article>
-      <section class="flex-cont column-cont">
+      <section class="flex-cont column-cont" id="posts">
         <article class="third flex-cont">
           <h3>Music makes the world go round</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
             aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
             pariatur!
             Quisquam, libero.</p>
-            <div class="box-img"><img src="img/bateria-front.jpg" alt="bateria-front"></div>
+          <div class="box-img"><img src="img/bateria-front.jpg" alt="bateria-front"></div>
         </article>
         <article class="third flex-cont">
-            <h3>Try to stand still</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa, lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
-              aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
-              pariatur!
-              Quisquam, libero.</p>
-              <div class="box-img"><img src="img/girl-surdo.jpg" alt="girl-surdo"></div>
-          </article>
-          <article class="third flex-cont">
-              <h3>Bring music to life</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
-                aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
-                sectetur magnam culpa,
-                Quisquam, libero.</p>
-                <div class="box-img"><img src="img/bateria-back.jpg" alt="bateria-back"></div>
-            </article>
+          <h3>Try to stand still</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
+            lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
+            aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
+            pariatur!
+            Quisquam, libero.</p>
+          <div class="box-img"><img src="img/girl-surdo.jpg" alt="girl-surdo"></div>
+        </article>
+        <article class="third flex-cont">
+          <h3>Bring music to life</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
+            aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
+            sectetur magnam culpa,
+            Quisquam, libero.</p>
+          <div class="box-img"><img src="img/bateria-back.jpg" alt="bateria-back"></div>
+        </article>
       </section>
     </div>
   </main>
   <footer class="flex-cont">
-      
-        <ul class="social flex-cont">
-          <li><a href="javascript:;" class="fa fa-facebook"></a></li>
-          <li><a href="javascript:;" class="fa fa-twitter"></a></li>
-          <li><a href="javascript:;" class="fa fa-instagram"></a></li>
-        </ul>
-        <a href="mailto:salesambansa@gmail.com" class="email">salesambansa@gmail.com</a>
-        <a href="javascript:;" class="logo"><img src="img/logo.svg" alt="logo"></a>
-   
+    <ul class="social flex-cont">
+      <li><a href="javascript:;" class="fa fa-facebook"></a></li>
+      <li><a href="javascript:;" class="fa fa-twitter"></a></li>
+      <li><a href="javascript:;" class="fa fa-instagram"></a></li>
+    </ul>
+    <a href="mailto:salesambansa@gmail.com" class="email">salesambansa@gmail.com</a>
+    <a href="javascript:;" class="logo"><img src="img/logo.svg" alt="logo"></a>
     <small>&copy; Martina Pantelic</small>
   </footer>
-
-
-
   <!-- <script src="index.js" type="text/javascript"></script> -->
 </body>
 
