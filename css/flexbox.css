@@ -137,7 +137,6 @@ p {
 }
 
 .hero-banner h1 {
-    text-transform: uppercase;
     z-index: 1;
     color: #efce42;
     background-color: #000;
@@ -145,9 +144,10 @@ p {
     font-size: 3em;
 }
 
-
-
-
+.hero-banner h1 span {
+    text-transform: uppercase;
+    display: block;
+}
 .heading-block {
     background-color: #efce42;
     padding: 52px;

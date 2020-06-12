@@ -144,7 +144,12 @@ p {
     transform: translate(-50%, -50%);
 }
 
-.heading-block {
+.hero-banner h1 span {
+    text-transform: uppercase;
+    display: block;
+}
+
+x {
     background-color: #efce42;
     padding: 52px;
     text-align: center;

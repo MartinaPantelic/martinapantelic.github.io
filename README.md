@@ -35,11 +35,3 @@ And push all the changes into it, also we will be able to see the live site in h
 
 Create issues on the link below on the parent repo if you are stuck and want to talk about it. You can paste code, tag people and refer to other issues there. Please use it! It will be helpful for mentors and future students to see where common problems are. Link here: https://github.com/Code-the-Dream-School/Front-End-1-Week-2-Assignment/issues
 
-
-font import
-accessibility  arttr
-linkvi za menjanje stranice
-linkovi za skakanje po stranici
-tranzicije
-
-float str
