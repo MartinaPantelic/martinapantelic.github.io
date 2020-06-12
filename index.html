@@ -11,14 +11,14 @@
   <link rel="icon" href="img/favicon.ico" />
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/flexbox.css" type="text/css">
+  <link rel="stylesheet" href="./css/float.css" type="text/css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <a href="javascript:;" class="logo"><img src="img/logo.svg" alt="logo"></a>
     <nav class="navbar">
-      <ul>
+      <ul class="">
         <li><a href="flex.html">Flex layout</a></li>
         <li><a href="#aboutus">About us</a></li>
         <li><a href="#whatwedo">What we do</a></li>
@@ -36,7 +36,7 @@
       <h1>Escola de samba SAMBANSA</h1>
     </div>
     <div class="container">
-      <article class="article flex-cont" id="aboutus">
+      <article class="article clearfix" id="aboutus">
         <div class="text-content">
           <h2 class="heading-block">About Us</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
@@ -48,7 +48,7 @@
           <img src="img/tamborims.jpg" alt="girls-play-tamborims">
         </div>
       </article>
-      <article class="article flex-cont" id="whatwedo">
+      <article class="article clearfix" id="whatwedo">
         <div class="text-content">
           <h2 class="heading-block">What we do</h2>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
@@ -60,8 +60,8 @@
           <img src="img/oja.jpg" alt="girl-plays-agogo">
         </div>
       </article>
-      <section class="flex-cont column-cont" id="posts">
-        <article class="third flex-cont">
+      <section class="column-cont clearfix" id="posts">
+        <article class="third">
           <h3>Music makes the world go round</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
             aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
@@ -69,7 +69,7 @@
             Quisquam, libero.</p>
           <div class="box-img"><img src="img/bateria-front.jpg" alt="bateria-front"></div>
         </article>
-        <article class="third flex-cont">
+        <article class="third">
           <h3>Try to stand still</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
             lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
@@ -78,7 +78,7 @@
             Quisquam, libero.</p>
           <div class="box-img"><img src="img/girl-surdo.jpg" alt="girl-surdo"></div>
         </article>
-        <article class="third flex-cont">
+        <article class="third">
           <h3>Bring music to life</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quos, maxime consectetur magnam culpa,
             aspernatur laudantium at in vitae reiciendis pariatur eaque minima ullam, excepturi illum. Dolorem,
@@ -89,8 +89,8 @@
       </section>
     </div>
   </main>
-  <footer class="flex-cont">
-    <ul class="social flex-cont">
+  <footer class="">
+    <ul class="social">
       <li><a href="javascript:;" class="fa fa-facebook"></a></li>
       <li><a href="javascript:;" class="fa fa-twitter"></a></li>
       <li><a href="javascript:;" class="fa fa-instagram"></a></li>

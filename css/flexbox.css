@@ -51,16 +51,13 @@ p {
 
 /*----------
 ------------- header ------------------------------------------------------------------ */
-header,
-header ul,
-.navbar ul {
-    display: flex;
-}
 
-header {
+
+.header {
     position: fixed;
     width: 100%;
     justify-content: space-between;
+    flex-direction: row;
     background-color: rgba(4, 150, 80, 0.5);
     color: #fff;
     z-index: 2;
@@ -86,35 +83,7 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     padding: 10px;
-    
-}
 
-.hero-banner {
-    background: no-repeat center center fixed;
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #efce42;
-    margin-bottom: 40px;
-}
-
-.hero-banner:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 100px;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(4, 150, 80, 0.5) 0%, rgba(4, 150, 80, 0) 50%);
-}
-
-.hero-banner h1 {
-    text-transform: uppercase;
-    z-index: 1;
-    background-color: #000;
-    text-align: center;
 }
 
 .logo {
@@ -124,6 +93,7 @@ header {
     padding: 5px;
     z-index: 1;
 }
+
 .logo img {
     width: 100%;
 }
@@ -142,6 +112,40 @@ header {
     height: 100%;
     border-radius: 50%;
 }
+
+/*----------
+------------- main ------------------------------------------------------------------ */
+
+.hero-banner {
+    background: no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.hero-banner:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(4, 150, 80, 0.5) 0%, rgba(4, 150, 80, 0) 50%);
+}
+
+.hero-banner h1 {
+    text-transform: uppercase;
+    z-index: 1;
+    color: #efce42;
+    background-color: #000;
+    text-align: center;
+    font-size: 3em;
+}
+
+
 
 
 .heading-block {
@@ -169,9 +173,11 @@ footer {
 footer.flex-cont {
     flex-direction: column;
 }
+
 .email {
     margin-bottom: 5px;
 }
+
 .social a {
     margin: 10px;
     padding: 10px;
