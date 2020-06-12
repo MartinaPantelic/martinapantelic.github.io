@@ -149,7 +149,7 @@ p {
     display: block;
 }
 
-x {
+.heading-block  {
     background-color: #efce42;
     padding: 52px;
     text-align: center;
