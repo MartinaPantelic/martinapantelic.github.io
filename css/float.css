@@ -132,7 +132,6 @@ p {
 }
 
 .hero-banner h1 {
-    text-transform: uppercase;
     z-index: 1;
     color: #efce42;
     background-color: #000;
