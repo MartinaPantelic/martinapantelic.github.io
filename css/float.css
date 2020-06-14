@@ -18,6 +18,7 @@ h1,
 h2,
 h3 {
     font-family: "Fjalla One", Arial, sans-serif;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -28,6 +29,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     color: #fff;
+    transition: ease-in .2s;
 }
 
 a:hover {
@@ -36,6 +38,7 @@ a:hover {
 
 p {
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .container {
@@ -105,11 +108,16 @@ p {
     z-index: 1;
 }
 
+.avatar:hover .avatar-img {
+    border: 2px solid #efce42;
+}
+
 .avatar-img {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     border-radius: 50%;
+    border: 2px solid #fff;
 }
 
 /*----------
